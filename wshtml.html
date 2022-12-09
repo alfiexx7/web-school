@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web school - learn html</title>
+<style>
+    *{
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* header */
+a{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav{
+  width: 100%;
+  height: 45px;
+  background-color:#ffffff;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav img{
+  padding: 0px 0px;
+  width: 50px;
+}
+
+.nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+.nav ul li{
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 45px;
+}
+
+.nav ul li a{
+  color: #FF2C2C;
+  padding: 13px 10px;
+}
+
+.nav ul li a:hover{
+  border-bottom:2px solid #FF2C2C ;
+}
+
+@media (max-width:650px){
+  .nav ul{
+    position: fixed;
+    left: 0;
+    width: 25%;
+    height: 110vh;
+    background-color:rgba(0, 0, 0, 0.5);
+    left: -35%;
+    transition: 2s;
+  } 
+  .nav ul.slide{
+    left: 0;
+    transition: 2s;
+  }
+  .nav ul li{
+    display: block;
+  }
+ 
+  .hamburger{
+    float: right;
+    padding-right: 20px;
+    padding-top: 12px;
+    cursor: pointer;
+  }
+  .hamburger .line{
+    width: 25px;
+    height: 5px;
+    background-color:#FF2C2C;
+    margin-bottom: 3px;
+    display: block;
+    border-radius: 5px;
+  }
+}
+/* menu */
+.b{
+  text-align: center;
+  
+}
+.b ul li{
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 45px;
+  margin: 0px;
+  background-color: #FF2C2C;
+  padding:0px 15px;
+  border: 2px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.b ul li a{
+  color: #ffff;
+}
+/* intro */
+.c{
+  padding: 15px;
+}
+.c h1{
+  text-align: center;
+  color: #FF2C2C;
+
+}
+.c p{
+  font-size: 20px;
+}
+.c h5{
+
+  font-size: 25px;
+}
+
+.footer-distributed {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font: bold 16px sans-serif;
+  padding: 25px 25px 30px 25px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+
+.footer-distributed h3 span {
+  color: #FF2424;
+}
+
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #e0ac1c;
+  text-decoration: none;
+  ;
+}
+
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+  background-color: #FF2C2C;
+}
+
+.footer-links a:hover {
+  color: #FF2C2C;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+  .footer-distributed .footer-center i {
+      margin-left: 0;
+  }
+}
+
+/*-----x----footer----x------*/
+.note{
+  text-align: center;
+}
+
+.note h3{
+  font-size: 30px;
+}
+.c3{
+  background-color: #F2FFE5;
+}
+.c2{
+  background-color: #E5FFFA;
+}
+</style>
+</head>
+<body>
+<!-------header---------->
+
+
+
+    <div class="a" >
+        <nav class="nav">
+            <span><img src="cxlogot.png" width="50px"></span>
+    
+            <ul>
+                <li><a href="wshome.html">Home</a></li>
+                <li><a href="wsabout.html">about us</a></li>
+                <li><a href="wshome.html#learn">Learn</a></li>
+                <li><a href="wscontact.html">Contact</a></li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </nav>
+    </div>
+
+
+<!---*----header----*---->
+
+
+
+
+
+<!---------topics-------->
+
+
+<div class="b">
+ <div class="topics">
+  <ul class="topic">
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#htmleditors">HTML Editors</a></li>
+    <li><a href="#basics">Basics</a></li>
+  </ul>
+ </div>
+</div>
+
+
+<!----*-----topics---*----->
+
+
+
+
+
+<!---------html----------->
+
+
+<div class="c">
+  <div class="c1" id="introduction">
+    <br><br><br>
+  <h1>INTRODUCTION</h1>
+  <br>
+  <h5>What is html?</h5>
+  <p><br>HTML stands for Hyper Text Markup Language.<br><br> HTML is the standard markup language for documents designed to be displayed in a web browser. <br><br>It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript. </p>
+  </div>
+  <br>
+  <div class="c2" id="htmleditors">
+    <hr><br><br><br>
+    <h1>HTML editors</h1>
+    <br><br>
+    <p>Web pages can be created and modified by using professional HTML editors.<br><br>
+      For learning HTML I recommend a simple text editor like Notepad (PC) or TextEdit (Mac).<br><br>
+      Follow the steps below to create your first web page with Notepad or TextEdit.</p>
+      <br><br>
+      <hr>
+      <h5>Step 1: Open Notepad (PC)</h5><br><br><p>Open the Start Screen (the window symbol at the bottom left on your screen). Type Notepad.</p>
+      <br><br><hr><h5>Step 1: Open TextEdit (Mac)</h5><br><br><p>Open Finder > Applications > TextEdit
+
+        Also change some preferences to get the application to save files correctly. In Preferences > Format > choose <b>"Plain Text"</b><br><br>
+        Then under <b>"Open and Save"</b>, check the box that says <b>"Display HTML files as HTML code instead of formatted text"</b>.<br><br>
+        Then open a new document to place the code.</p>
+      <br><br><hr>
+      <h5>Step 2: Write Some HTML</h5>
+      <br><br>
+      <p>Write the following HTML code into Notepad:</p>
+      <br><br><br>
+      <img src="st2.png">
+      <br><br><hr>
+      <h5>Step 3: Save the HTML Page</h5>
+      <br><br>
+      <p>Save the file on your computer. <b>Select File > Save as</b> in the Notepad menu.<br> <br>Name the file <b>"index.htm"</b></p>
+      <br><br><hr><h5>Step 4: View the HTML Page in Your Browser</h5>
+      <br><br>
+      <p>Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with"). <br><br>The result will look much like this:</p>
+      <img src="st4.png"><br>
+  </div> <hr>
+  <div class="c3" id="basics">
+   <br>
+    <h1>Basics</h1>
+    <br><br>
+    <h5>The < !DOCTYPE> Declaration</h5>
+    <br><br>
+    <p>The < !DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.<br><br>It must only appear once, at the top of the page (before any HTML tags).<br><br>The < !DOCTYPE> declaration for HTML5 is <b>< !DOCTYPE html></b></p>
+    <br><hr><br>
+    <h5>HTML Documents</h5>
+    <br><br>
+    <p>All HTML documents must start with a document type declaration: <b>< !DOCTYPE html></b>.<br><br>The HTML document itself begins with <b>< html></b> and ends with <b>< /html ></b>.<br><br>The visible part of the HTML document is between <b>< body></b> and <b>< /body></b>.<br><br>example:
+    <br><img src="exc.png"> </p>
+    <br><hr><br>
+    <h5>HTML Headings</h5>
+    <br><br>
+    <p>HTML headings are defined with the <b>< h1></b> to <b>< h6></b> tags.<br><br><b> < h1></b> defines the most important heading. <b>< h6> </b>defines the least important heading<br><br>example:<br><img src="ex4.PNG"> </p>
+    <br><hr><br>
+    <h5>HTML Paragraphs</h5>
+    <br><br>
+    <p>HTML paragraphs are defined with the <b>< p></b> tag:<br><img src="ex5.PNG"></p>
+    <br><hr><br>
+    <h5>HTML Links</h5>
+    <br><br>
+    <p>HTML links are defined with the <b>< a></b> tag<br><br>The link's destination is specified in the<b> href</b> attribute.<br><br><img src="ex7.PNG"> </p>
+    <br><hr><br>
+    <h5>HTML Images</h5>
+    <br><br>
+    <p>HTML images are defined with the <b>< img></b> tag.<br><br>The source file <b>(src)</b>, alternative text<b> (alt)</b>,<b> width</b>, and <b>height</b> are provided as attributes:<br><br><img src="ex9.PNG"></p><br><hr>
+  </div>
+</div>
+<br><br>
+
+<div class="note">
+  <h3>!More Tutorials will be added soon!</h3>
+</div>
+
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+      <h3>web<span>school</span></h3>
+
+      <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="https://www.youtube.com/">youtube</a>
+          |
+          <a href="#">insta</a>
+          |
+          <a href="#">facebook</a>
+      </p>
+
+      <p class="footer-company-name">Copyright © 202 <strong>Web School</strong> All rights reserved</p>
+  </div>
+</footer>
+
+<!------*-----html------*------>
+</body>
+</html>

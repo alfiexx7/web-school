@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us-web school</title>
+<style>
+*{
+  margin: 0;
+  list-style: none;
+}
+a{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav{
+  width: 100%;
+  height: 45px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav img{
+  padding: 0px 0px;
+  width: 50px;
+}
+
+.nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+.nav ul li{
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 45px;
+}
+
+.nav ul li a{
+  color: #FF2C2C;
+  padding: 13px 10px;
+}
+
+.nav ul li a:hover{
+  border-bottom:2px solid #FF2C2C ;
+}
+
+@media (max-width:650px){
+  .nav ul{
+    position: fixed;
+    left: 0;
+    width: 25%;
+    height: 110vh;
+    background-color:rgba(0, 0, 0, 0.5);
+    left: -35%;
+    transition: 2s;
+  } 
+  .nav ul.slide{
+    left: 0;
+    transition: 2s;
+  }
+  .nav ul li{
+    display: block;
+  }
+ 
+  .hamburger{
+    float: right;
+    padding-right: 20px;
+    padding-top: 12px;
+    cursor: pointer;
+  }
+  .hamburger .line{
+    width: 25px;
+    height: 5px;
+    background-color:#FF2C2C;
+    margin-bottom: 3px;
+    display: block;
+    border-radius: 5px;
+  }
+}
+.b img{
+    width: 500px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    clip-path: circle();
+    margin-top: 40px;
+}
+.c p{
+    text-align: center;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    color:#FF2C2C;
+}
+body{
+    background-color:#ffffff;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.d h4{
+    text-align: center;
+    padding: 25px;
+    font-size: 25px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-height:800px) {
+  footer {
+      position: static;
+  }
+  header {
+      padding-top: 40px;
+  }
+}
+
+.footer-distributed {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font: bold 16px sans-serif;
+  padding: 25px 25px 30px 25px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color:#ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+
+.footer-distributed h3 span {
+  color:#FF2C2C;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #e0ac1c;
+  text-decoration: none;
+  ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+  background-color:#FF2C2C;
+}
+
+.footer-links a:hover {
+  color:#FF2C2C;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+  .footer-distributed .footer-center i {
+      margin-left: 0;
+  }
+} 
+
+
+
+</style>
+</head>
+<body>
+<div class="a" >
+        <nav class="nav">
+            <span><img src="cxlogot.png" width="50px"></span>
+    
+            <ul>
+                <li><a href="wshome.html">Home</a></li>
+                <li><a href="wsabout.html">about us</a></li>
+                <li><a href="wshome.html#learn">Learn</a></li>
+                <li><a href="wscontact.html">Contact</a></li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </nav>
+</div>
+<div class="b">
+    <img src="auws.jpg">
+</div>
+<div class="c">
+    <br>
+    <p>ABOUT US</p>
+</div> 
+<div class="d">
+    <h4>
+    web school is an innovative online platform that <br>
+    teaches coding and thereby improving the 21st century<br>
+    skills. It is also an excellent way<br>
+    to teach mathematical and science concepts in a<br>
+    different way and have problem-solving skills, logic<br>
+    and patience.</h4>
+</div>
+<div  class="e">
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>web<span>school</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="https://www.youtube.com/">youtube</a>
+                |
+                <a href="#">insta</a>
+                |
+                <a href="#">facebook</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2021 <strong>Web School</strong> All rights reserved</p>
+        </div>
+    </footer>
+</div> 
+</body>
+</html>

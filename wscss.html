@@ -1,0 +1,423 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn css - Web scool</title>
+<style>
+  *{
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+a{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav{
+  width: 100%;
+  height: 45px;
+  background-color:#ffffff;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav img{
+  padding: 0px 0px;
+  width: 50px;
+}
+
+.nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+.nav ul li{
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 45px;
+}
+
+.nav ul li a{
+  color: #FF2C2C;
+  padding: 13px 10px;
+}
+
+.nav ul li a:hover{
+  border-bottom:2px solid #FF2C2C ;
+}
+
+@media (max-width:650px){
+  .nav ul{
+    position: fixed;
+    left: 0;
+    width: 25%;
+    height: 110vh;
+    background-color:rgba(0, 0, 0, 0.5);
+    left: -35%;
+    transition: 2s;
+  } 
+  .nav ul.slide{
+    left: 0;
+    transition: 2s;
+  }
+  .nav ul li{
+    display: block;
+  }
+ 
+  .hamburger{
+    float: right;
+    padding-right: 20px;
+    padding-top: 12px;
+    cursor: pointer;
+  }
+  .hamburger .line{
+    width: 25px;
+    height: 5px;
+    background-color:#FF2C2C;
+    margin-bottom: 3px;
+    display: block;
+    border-radius: 5px;
+  }
+}
+
+/* menu */
+.b{
+  text-align: center;
+  
+}
+.b ul li{
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 45px;
+  margin: 0px;
+  background-color: #FF2C2C;
+  padding:0px 15px;
+  border: 2px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.b ul li a{
+  color: #ffff;
+}
+
+.c{
+  padding: 15px;
+}
+.c h1{
+  text-align: center;
+  color: #FF2C2C;
+
+}
+.c p{
+  font-size: 20px;
+}
+.c h5{
+
+  font-size: 25px;
+}
+.c2{
+    background-color: #FFEEFE;
+}
+.c3{
+  background-color: #FFFDE8;
+}
+.note{
+  text-align: center;
+}
+
+.note h3{
+  font-size: 30px;
+}
+
+.footer-distributed {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font: bold 16px sans-serif;
+  padding: 25px 25px 30px 25px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+
+.footer-distributed h3 span {
+  color: #FF2424;
+}
+
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #e0ac1c;
+  text-decoration: none;
+  ;
+}
+
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+  background-color: #FF2C2C;
+}
+
+.footer-links a:hover {
+  color: #FF2C2C;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+  .footer-distributed .footer-center i {
+      margin-left: 0;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="a" >
+        <nav class="nav">
+            <span><img src="cxlogot.png" width="50px"></span>
+    
+            <ul>
+                <li><a href="wshome.html">Home</a></li>
+                <li><a href="wsabout.html">about us</a></li>
+                <li><a href="wshome.html#learn">Learn</a></li>
+                <li><a href="wscontact.html">Contact</a></li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </nav>
+</div>
+
+<!---------topics-------->
+
+
+<div class="b">
+    <div class="topics">
+     <ul class="topic">
+       <li><a href="#introduction">Introduction</a></li>
+       <li><a href="#howtoadd">how to add</a></li>
+       <li><a href="#comments">comments</a></li>
+     </ul>
+    </div>
+</div>
+
+<div class="c">
+    <div class="c1" id="introduction">
+        <br><br><br>
+        <h1>introduction</h1>
+        <br>
+        <h5>what is css?</h5>
+        <p><br>CSS stands for <b>Cascading Style Sheets</b><br><br>
+          CSS describes how HTML elements are to be displayed on screen, paper, or in other media<br><br>
+          CSS saves a lot of work. It can control the layout of multiple web pages all at once</p>
+        <br><br><hr>
+        <h5>CSS Syntax</h5>
+        <br><br>
+        <img src="css1.PNG">
+        <br><br>
+        <p>The selector points to the HTML element you want to style.<br><br>
+          The declaration block contains one or more declarations separated by semicolons.<br><br>
+          Each declaration includes a CSS property name and a value, separated by a colon.<br><br>
+          Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+    </div>
+    <br>
+    <div class="c2" id="howtoadd">
+        <hr><br><br><br>
+        <h1>How To Add CSS</h1>
+        <br><br>
+        <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.<br><br><br></p>
+        <h5>Three Ways to Insert CSS</h5><br><br>
+        <p>External CSS<br><br>Internal CSS<br><br>Inline CSS</p>
+        <br><br><hr>
+        <h5>External CSS</h5>
+        <br><br>
+        <p>With an external style sheet, you can change the look of an entire website by changing just one file!<br><br>
+          Each HTML page must include a reference to the external style sheet file inside the <b>< link></b> element, inside the head section.<br><br>
+          External styles are defined within the <b>< link></b> element, inside the <b>< head></b> section of an HTML page:</p>
+        <br><img src="css2.PNG">
+        <br><br>
+        <p>An external style sheet can be written in any text editor, and must be saved with a <b>.css</b> extension.<br><br>
+          Here is how the <b>"mystyle.css"</b> file looks:</p>
+        <br>
+        <img src="css3.PNG">
+        <br><br><hr><br>
+        <h5>Internal CSS</h5>
+        <br><br>
+        <p>An internal style sheet may be used if one single HTML page has a unique style.<br><br>
+          The internal style is defined inside the <b>style element, inside the head section</b> of an html page:</p>
+        <br><br>
+        <img src="css7.PNG">
+        <br><br><hr><br>
+        <h5>Inline CSS</h5>
+        <br><br>
+        <p>An inline style may be used to apply a unique style for a<b> single element</b>.
+          <br><br>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
+        <img src="css8.PNG"><br><br>
+    </div>
+    <div class="c3" id="comments">
+      <hr><br><br><br>
+      <h1>CSS Comments</h1>
+      <br><br>
+      <p>Comments are used to explain the code, and may help when you edit the source code at a later date.
+        <br><br>Comments are ignored by browsers.
+        <br><br>A CSS comment is placed inside the <b>style element</b>, and starts with <b>/*</b> and ends with <b>*/</b>:
+        <br><br><img src="css9.PNG">
+        <br><br>You can add comments wherever you want in the code:
+        <br><br><img src="css10.PNG"></p><br><hr>
+    </div>
+</div>
+
+
+<!----*-----topics---*----->
+
+
+<br><br>
+<div class="note">
+  <h3>!More Tutorials will be added soon!</h3>
+</div>
+   
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+      <h3>web<span>school</span></h3>
+
+      <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="https://www.youtube.com/">youtube</a>
+          |
+          <a href="#">insta</a>
+          |
+          <a href="#">facebook</a>
+      </p>
+
+      <p class="footer-company-name">Copyright © 202 <strong>Web School</strong> All rights reserved</p>
+  </div>
+</footer>   
+ 
+</body>
+</html>

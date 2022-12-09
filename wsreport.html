@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>report-web school</title>
+<style>
+*{
+  margin: 0;
+  list-style: none;
+}
+body{
+    background-color: #FFFEEC;
+}
+    a{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav{
+  width: 100%;
+  height: 45px;
+  background-color: #FFFEEC;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav img{
+  padding: 0px 0px;
+  width: 50px;
+}
+
+.nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+.nav ul li{
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 45px;
+}
+
+.nav ul li a{
+  color: #FF9300;
+  padding: 13px 10px;
+}
+
+.nav ul li a:hover{
+  border-bottom:2px solid #FF9300 ;
+}
+
+@media (max-width:650px){
+  .nav ul{
+    position: fixed;
+    left: 0;
+    width: 25%;
+    height: 110vh;
+    background-color:rgba(0, 0, 0, 0.5);
+    left: -35%;
+    transition: 2s;
+  } 
+  .nav ul.slide{
+    left: 0;
+    transition: 2s;
+  }
+  .nav ul li{
+    display: block;
+  }
+ 
+  .hamburger{
+    float: right;
+    padding-right: 20px;
+    padding-top: 12px;
+    cursor: pointer;
+  }
+  .hamburger .line{
+    width: 25px;
+    height: 5px;
+    background-color: #FF9300;
+    margin-bottom: 3px;
+    display: block;
+    border-radius: 5px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="a" >
+    <nav class="nav">
+        <span><img src="wsnlogor.png" width="50px"></span>
+    
+        <ul>
+            <li><a href="wshome.html">Home</a></li>
+            <li><a href="wshome.html#learn">Learn</a></li>
+            <li><a href="#">Report</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    
+        <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+        </div>
+    </nav>
+</div>
+</body>
+</html>

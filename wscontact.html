@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us-web school</title>
+<style>
+*{
+  margin: 0;
+  list-style: none;
+}
+a{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav{
+  width: 100%;
+  height: 45px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav img{
+  padding: 0px 0px;
+  width: 50px;
+}
+
+.nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+.nav ul li{
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 45px;
+}
+
+.nav ul li a{
+  color: #FF2C2C;
+  padding: 13px 10px;
+}
+
+.nav ul li a:hover{
+  border-bottom:2px solid #FF2C2C ;
+}
+
+@media (max-width:650px){
+  .nav ul{
+    position: fixed;
+    left: 0;
+    width: 25%;
+    height: 110vh;
+    background-color:rgba(0, 0, 0, 0.5);
+    left: -35%;
+    transition: 2s;
+  } 
+  .nav ul.slide{
+    left: 0;
+    transition: 2s;
+  }
+  .nav ul li{
+    display: block;
+  }
+ 
+  .hamburger{
+    float: right;
+    padding-right: 20px;
+    padding-top: 12px;
+    cursor: pointer;
+  }
+  .hamburger .line{
+    width: 25px;
+    height: 5px;
+    background-color: #FF2C2C;
+    margin-bottom: 3px;
+    display: block;
+    border-radius: 5px;
+  }
+}
+.b img{
+    width: 500px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    clip-path: circle();
+    margin-top: 40px;
+}
+.c p{
+    text-align: center;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    color:#FF2C2C;
+}
+body{
+    background-color:#ffffff;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.d h4{
+    text-align: center;
+    padding: 25px;
+    font-size: 25px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-height:800px) {
+  footer {
+      position: static;
+  }
+  header {
+      padding-top: 40px;
+  }
+}
+
+.footer-distributed {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font: bold 16px sans-serif;
+  padding: 25px 25px 30px 25px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color:#ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+
+.footer-distributed h3 span {
+  color:#FF2C2C;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #e0ac1c;
+  text-decoration: none;
+  ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+  background-color:#FF2C2C;
+}
+
+.footer-links a:hover {
+  color:#FF2C2C;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+  .footer-distributed .footer-center i {
+      margin-left: 0;
+  }
+} 
+.contact{
+    position: relative;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+}
+.container .contactinfo .box .text h3{
+    color: #FF2C2C;
+}
+.contactform{
+    width: 40%;
+    padding: 40px ;
+    background-color:#FFffff ;
+    border:2px solid black;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    outline: none;
+    resize: none;
+}
+@media (max-width:700px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .container .contactinfo,
+    .contactform
+    {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<div class="a" >
+        <nav class="nav">
+            <span><img src="cxlogot.png" width="50px"></span>
+    
+            <ul>
+                <li><a href="wshome.html">Home</a></li>
+                <li><a href="wsabout.html">about us</a></li>
+                <li><a href="wshome.html#learn">Learn</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </nav>
+</div>
+<div class="b">
+    <img src="auws.jpg">
+</div>
+<div class="c">
+    <br>
+    <p>CONTACT US</p>
+</div> 
+<div class="d">
+  <section class="contact">
+    <div class="container">
+        <div class="contactinfo">
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="text">
+                    <h3>PHONE</h3>
+                    <p>+966 577 41 9692</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa-duotone fa-envelope"></i></div>
+                <div class="text">
+                    <h3>E-MAIL</h3>
+                    <p>alfiebrysonjc@gmail.com</p>
+                </div>
+            </div>
+        </div>
+            <div class="contactform">
+                <form>
+                    <h2>send message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>full name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>E-mail</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>type your message....</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="" value="send">
+                    </div>
+                </form>
+            </div>
+        
+    </div>
+  </section>
+</div>
+<div  class="e">
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>web<span>school</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="https://www.youtube.com/">youtube</a>
+                |
+                <a href="#">insta</a>
+                |
+                <a href="#">facebook</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2021 <strong>Web School</strong> All rights reserved</p>
+        </div>
+    </footer>
+</div> 
+</body>
+</html>
